@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Configurator</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <!-- Компания -->
+                <select name="company" id="company" class="form-control">
+                    <option value="">Все</option>
+                    <!-- Динамическое заполнение -->
+                </select>
+                <!-- Операционная система -->
+                <div class="os">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="os" value="" checked> Все
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="os" value="ios"> iOS
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="os" value="android"> Android
+                        </label>
+                    </div>
+                </div>
+                <!-- Цвет -->
+                <div class="colors">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="colors" value="" checked> Все
+                        </label>
+                    </div>
+                    <!-- Динамическое заполнение -->
+                </div>
+                <!-- Память -->
+                <div class="memory">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="memory" value="" checked> Все
+                        </label>
+                    </div>
+                    <!-- Динамическое заполнение -->
+                </div>
+                <!-- Оперативная память -->
+                <div class="ram">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="ram" value="" checked> Все
+                        </label>
+                    </div>
+                    <!-- Динамическое заполнение -->
+                </div>
+            </div>
+            <div class="col-sm-8 js-products">
+                <!-- Товары -->
+            </div>
+        </div>
+    </div>
+    <script src="./public/js/jquery-3.2.1.min.js"></script>
+    <script src="./public/js/products.js"></script>
+    <script src="./public/js/index.js"></script>
+</body>
+
+</html>
